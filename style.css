@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+:root {
+  --Bright-Red: hsl(12, 88%, 59%);
+  --Bright-Red-op: hsla(12, 88%, 59%, 0.658);
+  --Dark-Blue: hsl(228, 39%, 23%);
+  --Dark-Grayish-Blue: hsl(227, 12%, 61%);
+  --Very-Dark-Blue: hsl(233, 12%, 13%);
+  --Very-Pale-Red: hsl(13, 100%, 96%);
+  --Very-Light-Gray: hsl(0, 0%, 98%);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Be Vietnam Pro', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+body {
+  width: 100%;
+  min-height: 100vh;
+  font-size: 1rem;
+}
+.wrapper {
+  min-height: 300vh;
+  width: 100%;
+  max-width: 1440px;
+  background: url(./images/bg-tablet-pattern.svg);
+  background-position: 130% -5%;
+  background-repeat: no-repeat;
+  background-size: inherit;
+  margin: auto;
+}
+.header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 4rem;
+}
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.nav_link {
+  color: var(--Very-Dark-Blue);
+  text-decoration: none;
+  font-weight: 500;
+}
+.nav_link:hover {
+  color: var(--Dark-Grayish-Blue);
+}
+.btn {
+  padding: 1rem 2rem;
+  background-color: var(--Bright-Red);
+  color: var(--Very-Light-Gray);
+  border: none;
+  border-radius: 100vw;
+  cursor: pointer;
+  box-shadow: 0px 7px 18px #f25f3a59;
+}
+.btn:hover {
+  background-color: var(--Bright-Red-op);
+}
+/* top section */
+.sec_top {
+  min-height: 100vh;
+  width: 100%;
+  background: url(./images/illustration-intro.svg);
+  background-repeat: no-repeat;
+  background-size: inherit;
+  background-position: top right;
+  padding: 5rem 4rem;
+}
+.sec_top h1 {
+  width: 50%;
+  font-size: 4rem;
+  font-weight: 700;
+  color: var(--Very-Dark-Blue);
+  margin-bottom: 2rem;
+}
+.sec_top p {
+    color: var(--Dark-Grayish-Blue);
+    width: 32%;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    line-height: 1.5;
+}
