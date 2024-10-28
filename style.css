@@ -21,12 +21,13 @@ body {
   min-height: 100vh;
   font-size: 1rem;
 }
+
 .wrapper {
   min-height: 300vh;
   width: 100%;
   max-width: 1440px;
   background: url(./images/bg-tablet-pattern.svg);
-  background-position: 130% -5%;
+  background-position: 790px -150px;
   background-repeat: no-repeat;
   background-size: inherit;
   margin: auto;
@@ -36,23 +37,24 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 2rem 4rem;
+  padding: 3.5rem 10rem;
 }
 .nav {
   display: flex;
   align-items: center;
-  gap: 2rem;
+  gap: 1.6rem;
 }
 .nav_link {
   color: var(--Very-Dark-Blue);
   text-decoration: none;
   font-weight: 500;
+  font-size: 0.8rem;
 }
 .nav_link:hover {
   color: var(--Dark-Grayish-Blue);
 }
 .btn {
-  padding: 1rem 2rem;
+  padding: 0.8rem 2.1rem;
   background-color: var(--Bright-Red);
   color: var(--Very-Light-Gray);
   border: none;
@@ -63,27 +65,150 @@ body {
 .btn:hover {
   background-color: var(--Bright-Red-op);
 }
-/* top section */
-.sec_top {
-  min-height: 100vh;
+.section {
   width: 100%;
-  background: url(./images/illustration-intro.svg);
-  background-repeat: no-repeat;
-  background-size: inherit;
-  background-position: top right;
-  padding: 5rem 4rem;
+  padding: 5rem 10rem;
 }
-.sec_top h1 {
-  width: 50%;
-  font-size: 4rem;
+/* top section */
+/* should be img  */
+.sec_one {
+  /* background: url(./images/illustration-intro.svg); */
+  /* background-repeat: no-repeat; */
+  /* background-size: inherit; */
+  /* background-position: top 40px right 140px; */
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.sec_ttl {
+  margin-top: 2.1rem;
+  width: 436px;
+  font-size: 3.2rem;
   font-weight: 700;
   color: var(--Very-Dark-Blue);
-  margin-bottom: 2rem;
+  margin-bottom: 2.1rem;
+  line-height: 1.17;
 }
-.sec_top p {
-    color: var(--Dark-Grayish-Blue);
-    width: 32%;
-    font-size: 1.2rem;
-    margin-bottom: 2rem;
-    line-height: 1.5;
+.sec_txt {
+  color: var(--Dark-Grayish-Blue);
+  width: 339px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  margin-bottom: 2.3rem;
+  line-height: 1.5;
+}
+.sec_img {
+  width: 580px;
+  height: 525px;
+  margin-right: -1rem;
+}
+/* section 2 */
+.sec_two {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  background: url(./images/bg-tablet-pattern.svg);
+  background-position: -490px 340px;
+  background-repeat: no-repeat;
+  background-size: inherit;
+  padding-bottom: 20rem;
+}
+.sec_two_ttl {
+  width: 422px;
+  font-size: 2.3rem;
+  font-weight: 700;
+  color: var(--Dark-Blue);
+  margin-bottom: 2rem;
+  line-height: 1.1;
+}
+.sec_two_txt {
+  color: var(--Dark-Grayish-Blue);
+  width: 325px;
+  font-size: 0.95rem;
+  font-weight: 400;
+  line-height: 1.55;
+}
+.sec_list {
+  width: 46%;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+.sec_list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.625rem;
+}
+.li_num {
+  background-color: var(--Bright-Red);
+  color: var(--Very-Light-Gray);
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0.65rem 1.65rem;
+  text-align: center;
+  border-radius: 100vw;
+}
+.li_ttl {
+  color: var(--Dark-Blue);
+  font-weight: 700;
+  font-size: 0.95rem;
+  margin-bottom: 1.65rem;
+  margin-top: 0.5rem;
+}
+.li_txt {
+  color: var(--Dark-Grayish-Blue);
+  font-size: 0.91rem;
+  font-weight: 400;
+  line-height: 1.55;
+}
+/* slider section*/
+.slider_sec {
+  width: 100%;
+  position: absolute;
+  margin-top: -10rem;
+  text-align: center;
+}
+.sld_ttl{
+  font-size: 2.3rem;
+  font-weight: 700;
+  color: var(--Dark-Blue);
+  margin-bottom: 7rem;
+}
+.slider {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  /* flex-wrap: wrap; */
+  gap: 2rem;
+  margin-bottom: 2.68rem;
+
+
+}
+.tst_box {
+  width: 540px;
+  background-color: var(--Very-Light-Gray);
+  padding: 2.75rem 2.68rem;
+  position: relative;
+}
+.tst_box img{
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  position: absolute;
+  top: -36px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.tst_box h3{
+  margin-block:1.875rem ;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--Dark-Blue);
+}
+.tst_box p{
+  color: var(--Dark-Grayish-Blue);
+  font-size: 0.98rem;
+  font-weight: 400;
+  line-height: 1.5;
 }
