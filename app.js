@@ -18,3 +18,20 @@ function addAnimation() {
     });
   });
 }
+document.addEventListener('DOMContentLoaded', () => {
+  const openMenuBtn = document.querySelector('.open-menu-btn');
+  const closeMenuBtn = document.querySelector('.close-menu-btn');
+  const nav = document.querySelector('.nav');
+
+  openMenuBtn.addEventListener('click', () => {
+    nav.classList.add('popup', 'active');
+    openMenuBtn.style.display = 'none';
+    closeMenuBtn.style.display = 'block';
+  });
+
+  closeMenuBtn.addEventListener('click', () => {
+    nav.classList.remove('popup', 'active');
+    openMenuBtn.style.display = 'block';
+    closeMenuBtn.style.display = 'none';
+  });
+});
