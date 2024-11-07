@@ -28,10 +28,10 @@
         <nav class="nav">
           <div class="nav_menu">
             <a href="#" class="nav_link">Pricing</a>
-            <a href="#" class="nav_link">Product</a>
-            <a href="#" class="nav_link">About Us</a>
+            <a href="#product" class="nav_link">Product</a>
+            <a href="#about" class="nav_link">About Us</a>
             <a href="#" class="nav_link">Careers</a>
-            <a href="#" class="nav_link">Community</a>
+            <a href="#community" class="nav_link">Community</a>
           </div>
         </nav>
         <button class="hdr_btn btn">Get Started</button>
@@ -45,7 +45,7 @@
         </div>
       </header>
       <main>
-        <section class="section sec_one">
+        <section class="section sec_one" id="product">
           <div>
             <h1 class="sec_one_ttl">
               Bring everyone together to build better products.
@@ -107,7 +107,7 @@
               </li>
             </ul>
           </div>
-          <section class="slider_sec">
+          <section class="slider_sec" id="about">
             <h1 class="sld_ttl">What they’ve said</h1>
             <div class="scroller" data-direction="right" data-speed="slow">
               <div class="scroller__inner">
@@ -152,15 +152,36 @@
                   </p>
                 </article>
               </div>
-              <div class="pagination">
-                <button class="prev">Previous</button>
-                <button class="next">Next</button>
+            </div>
+            <div class="small_scrn_tstm_slider">
+              <article class="sm_box">
+                <button class="prev">
+                  <img src="./images/left-icon.svg" alt="Previous" />
+                </button>
+                <img class="avatar" src="./images/avatar-anisha.png" alt="" />
+                <h3>Anisha Li</h3>
+
+                <p>
+                  “Manage has supercharged our team’s workflow. The ability to
+                  maintain visibility on larger milestones at all times keeps
+                  everyone motivated.”
+                </p>
+                <button class="next">
+                  <img src="./images/right-icon.svg" alt="Next" />
+                </button>
+              </article>
+              <div class="dots">
+                <span class="active"></span>
+                <span></span>
+                <span></span>
+                <span></span>
               </div>
             </div>
+
             <button class="btn">Get Started</button>
           </section>
         </section>
-        <section class="sec_btm">
+        <section class="sec_btm" id="community">
           <h1 class="sec_btm_ttl">Simplify how your team works today.</h1>
           <button class="btm_btn">Get Started</button>
         </section>
@@ -253,15 +274,34 @@
         </div>
 
         <div class="ftr_last">
-          <form class="ftr_form">
+          <form class="ftr_form" id="emailForm">
             <input
               class="form_inpt"
               type="text"
+              id="emailInput"
               placeholder="Updates in your inbox…"
             />
             <button class="go_btn" type="submit">Go</button>
+            <span class="err_msg" id="errorMessage"
+              >Please inset a valid email</span
+            >
+            <span class="success_msg" id="successMessage">
+              <span class="check_icon"
+                ><img src="/images/check-icon.svg" alt=""
+              /></span>
+              Thank you.
+            </span>
           </form>
           <div class="ftr_txt">Copyright 2020. All Rights Reserved</div>
+        </div>
+        <div class="attribution">
+          Challenge by
+          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+            >Frontend Mentor</a
+          >. Coded by
+          <a href="https://www.frontendmentor.io/profile/binzam" target="_blank"
+            >Binyam</a
+          >.
         </div>
       </footer>
     </div>
